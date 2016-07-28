@@ -122,7 +122,7 @@ activity %>% filter(is.na(steps)==TRUE) %>% nrow()
 ###2. 
 **Devise a strategy for filling in all of the missing values in the dataset.The strategy does not need to be sophisticated. Use of the mean for that 5-minute interval, etc.The strategy is to create a table with all na rows and filter by date, so that we have 2304 rows worth of dates corresponding to the na rows,then bind this date data frame with the dataframe of average steps for each interval. This data frame is 288 rows and will be repeated 8 times for each date. Then bind by row the resulting dataframe to the activity data frame and filter the resulting data frame to remove the nas**
 
-Use of the mean for the 5 minute interval to fill all of the missing values in the dataset.
+I will fill all the na values with the mean of the corresponding 5 minute interval in the dataset.
 
 ###3. 
 **Create a new dataset that is equal to the original dataset but with the missing  data filled in.**
